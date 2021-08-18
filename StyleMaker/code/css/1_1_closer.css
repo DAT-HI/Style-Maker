@@ -1,0 +1,269 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'NanumSquare', sans-serif;
+    color: #707070;
+}
+header {
+    padding: 16px 0;
+}
+
+/*상단 네이게이션 바*/
+.nav{
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px 16px 0 16px;
+    /*position:relative;
+    overflow-x: auto;*/
+    height: 30px;
+    }
+.nvtext{
+    font-size: 20px;
+    color: #4b3e3e;
+}
+
+.nvtext>p{
+    padding-left: 115px;
+    margin: 0;
+    display: inline-block;
+    color: #6400ff;
+    font-weight: bold;
+}
+
+.btn_group {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    margin-left: 40px;
+    display:inline-block;
+}
+
+.nvicon{
+    margin: 0 0 0 8px;
+    display:inline-flex;
+    position: relative;
+
+}
+
+/*상단 이너메뉴*/
+.dc1{
+    padding: 16px 16px 0 16px;
+    margin: 0;
+    border-bottom: 1px solid #C7C7C7;
+}
+    input {
+    display: none;
+    }
+
+.a1{
+display: inline-block;
+margin: 0px;
+width: 162px;
+padding-bottom: 5px;
+font-weight: bold;
+text-align: center;
+color: #707070;
+
+}
+label:hover {
+    color: #707070;
+    cursor: pointer;}
+
+label{
+    opacity: 0.87;
+}
+/*input 클릭시, label 스타일*/
+input:checked + label {
+    color: #707070;
+
+    border-bottom:2px solid #464646;
+    opacity: 1;
+}
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 
+{
+    display: block;}
+
+/* 예지  */
+
+
+
+#adv {
+    width: 100%;
+    /* height: ; */
+    border-top: 1px solid #707070;
+    /* outline: 1px dotted red; */
+}
+#adv>img{
+    width: 100%;
+    /* max-height: 200px; */
+}
+#item_category {
+    height: 72px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #707070;
+    /* outline: 1px dotted red; */
+}
+.icon {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.icon >img {
+    width : 30px;
+    height: 30px;
+}
+.icon > span {
+    margin-top: 2px;
+    font-size: 10px;
+}
+.main_contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* outline: 1px dotted red; */
+}
+.rcmd_style_space {
+    width: 100%;
+    height: 184px;
+    padding: 16px; /*final height : 216px*/
+    border-top: 1px solid #707070;
+    /* outline: 1px dotted red; */
+}
+.contents_title {
+    font-size: 12px;
+    height: 16px;
+    margin:0 0 8px 16px;
+    /* outline: 1px dotted green; */
+}
+.rcmd_styles {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* outline: 1px dotted green; */
+}
+.rcmd_style{
+    /* width: 40%; */
+    position: relative;
+}
+.rcmd_style > img {
+    /* width: 100%; */
+    width: 150px; 
+    /* height: 160px;
+    position: relative;
+    
+    /* outline: 1px dotted red; */
+    border: 1px solid #707070;
+}
+.rcmd_style > .heart{
+    position: absolute;
+    top: 83%;
+    left: 85%;
+    z-index: 99;
+}
+.rcmd_item_space {
+    width: 100%;
+    padding: 16px; /*final height : 232px*/
+    border-top: 1px solid #707070;
+    /* outline: 1px dotted red; */
+}
+.rcmd_item{
+    margin: 0;
+    /* padding: 8px 16px; */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* outline: 1px dotted green; */
+}
+.item {
+    margin-top: 8px;
+    max-width: 100px;
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: nowrap;
+    align-items: center;*/
+    /* outline: 1px dotted red; */
+    position: relative;
+}
+
+
+.item > img {
+    width: 100px;
+    border: 1px solid #707070;
+}
+#shop_name {
+    font-size: 10px;
+    height: 12px;
+}
+#item_name {
+    font-size: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* height: 12px; */
+}
+#item_price {
+    font-size: 12px;
+    height: 13px;
+}
+.item > .heart{
+    position: absolute;
+    top: 65%;
+    left: 80%;
+    z-index: 99;
+}
+footer {
+    height: 52px;
+    border-top: 1px solid #707070;
+}
+/*하단 메뉴*/
+.menu {
+    position: fixed;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    width: 360px;
+    height: 50px;
+    border-top: 1px solid #C7C7C7;
+}
+
+.menu ul{
+    list-style:none;
+    text-align:center;
+    padding:0px;
+    margin: 10px;
+  }
+  .menu ul li{
+    float:left;
+    width: 25%;
+    height:100%;
+    margin:0;
+    padding:0;
+    list-style: none;     
+    font-size: 11px;     
+    color: #000;            
+  }
+  .menu a:link, .menu a:visited{ 
+    text-decoration: none;
+    color:#000;
+    
+  }
+  .menu a:hover{
+    opacity: 1;
+  }

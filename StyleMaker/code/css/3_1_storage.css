@@ -1,0 +1,269 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+html {
+  width: 360px;
+  margin: 0 auto;
+  background-color: #CCCCCC;
+  font-family: 'NanumSquare', 'sans-serif';
+}
+
+#contain{
+    margin:0px auto; 
+    width:360px; 
+}
+
+#title{
+    margin:0px auto; 
+    width:360px; 
+    height: 150px;
+    background-color: #ffffff;
+    z-index: 2;
+    position: relative;
+}
+
+.center_txt{
+    margin-left: 160px;
+    margin-right: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    padding:16px;
+    color: #673AB7;
+    float: left;
+}
+
+.center_img{
+    margin-left: 290px;
+    padding: 16px 0px;
+    position: relative;
+
+}
+.center_img2{
+    height: 20px;
+    padding-left: 0px 8px;
+}
+
+hr{
+    border:#707070; 
+    border-top:solid 1.5px #707070;
+    margin-top: 0px;
+    position: relative;
+    z-index: 3;
+}
+
+.menu{
+    margin:0px auto;
+    width:360px; 
+    height: 27px;
+}
+
+.menu_txt1{
+    margin-left: 32px;
+    font-size: 16px;
+    font-weight: bold;
+    padding:0px 0px 8px;
+    color: #673AB7;
+    float: left;
+}
+
+.menu_txt2{
+    margin-left: 32px;
+    font-size: 16px;
+    font-weight: bold;
+    padding:0px 0px 8px 4px;
+    color: #2E2E2E;
+    float: left;
+}
+
+.line{
+    width: 80px;
+    border:#673AB7; 
+    border-top:solid 3px #673AB7;
+    margin: -10px 0px 0px 22px;
+    position: relative;
+    z-index: 4;
+}
+
+.thema{
+    display: inline-block; 
+    width: 48px; 
+    height: 28px; 
+    -webkit-border-radius: 13px; 
+    -moz-border-radius: 13px; 
+    border-radius: 13px; 
+    background-color: #9A67EA;
+    margin: 8px 0px 0px 8px;
+}
+.thema_txt1{
+    margin-left: 6px;
+    font-size: 12px;
+    font-weight: solid;
+    padding: 7px;
+    color: #FFFFFF;
+}
+
+.thema2{
+    display: inline-block; 
+    width: 48px; 
+    height: 28px; 
+    -webkit-border-radius: 13px; 
+    -moz-border-radius: 13px; 
+    border-radius: 13px; 
+    background-color: #E2E2E2;
+    margin: 8px 0px 0px 4px;
+}
+.thema3{
+    display: inline-block; 
+    width: 60px; 
+    height: 28px; 
+    -webkit-border-radius: 13px; 
+    -moz-border-radius: 13px; 
+    border-radius: 13px; 
+    background-color: #E2E2E2;
+    margin: 8px 0px 0px 4px;
+}
+
+.thema_txt2{
+    margin-left: 6px;
+    font-size: 12px;
+    font-weight: solid;
+    padding: 7px;
+    color: #858585;
+}
+
+#layout{
+    margin:0px auto; 
+    width:328px; 
+    height: 860px;
+    background-color: #ffffff;
+    padding:16px;
+    position: relative;
+    z-index: 1;
+    margin-top: 0px;
+}
+
+.recent{
+    width: 360px;
+    margin-left: 250px;
+    margin-bottom: 16px;
+    float: left;
+}
+.recent2{
+    width: 360px;
+    font-size: 12px;
+    font-weight: solid;
+    color: #2E2E2E;
+    margin-left: 270px;
+    margin-bottom: 16px;
+    margin-top: -37px;
+    float: left;
+}
+
+.product{
+    width: 98px;
+    height: 160px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    float: left;
+    z-index: 5;
+}
+.product2{
+    width: 98px;
+    height: 160px;
+    margin-bottom: 32px;
+    float: left;
+}
+
+.pro_txt{
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #2E2E2E;
+}
+
+.pro_txt2{
+    font-size: 10px;
+    font-weight: solid;
+    color: #2E2E2E;
+}
+
+.heart{
+    margin-left: 70px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 6;
+}
+
+.up{
+    width:35px;
+    height: 35px;
+    margin: 770px 298px;
+}
+
+#bottom{
+    margin:0px auto; 
+    width:327px; 
+    height:48px; 
+    border-top:solid 0.5px #707070;
+    background-color:#ffffff;
+    padding: 0px 16px;
+    position: fixed;
+    bottom: 0px;
+    margin-left: -16px;
+}
+
+.bmenu{
+    margin:6px 18px auto;
+    height:50px; 
+    width:50px; 
+    float: left;
+}
+
+.bmenu2{
+    margin:6px auto;
+    height:50px; 
+    width:50px; 
+    float: left;
+}
+
+
+
+/*상단 스타일리스트, 채팅 메뉴*/
+.dc1{
+    padding: 0px 16px 0 16px;
+    margin: 0;
+    border-bottom: 1px solid #C7C7C7;
+}
+    input {
+    display: none;
+    }
+
+.a1{
+display: inline-block;
+margin: 0px;
+width: 106px;
+padding-bottom: 5px;
+font-weight: bold;
+text-align: center;
+color: #707070;
+
+}
+label:hover {
+    color: #707070;
+    cursor: pointer;}
+
+label{
+    opacity: 0.87;
+}
+/*input 클릭시, label 스타일*/
+input:checked + label {
+    color: #707070;
+
+    border-bottom:2px solid #464646;
+    opacity: 1;
+}
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 
+{
+    display: block;}
+
