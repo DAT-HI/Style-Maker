@@ -1,7 +1,7 @@
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 
 body {
-    width: 360px;
+    width: 100%;
     margin: 0;
     font-family: 'NanumSquare', sans-serif;
      }
@@ -13,45 +13,14 @@ body {
 }
 
 
-/*상단 네이게이션 바*/
-.nav{
-    margin: 0 auto;
-    padding: 16px 16px 0 16px;
-    /*position:relative;
-    overflow-x: auto;*/
-    height: 30px;
-    }
-.nvtext{
-    font-size: 20px;
-    color: #4b3e3e;
-}
-
-.nvtext>p{
-    padding-left: 150px;
-    margin: 0;
-    display: inline-block;
-}
-
-.btn_group {
-    display: flex;
-    align-items: center;
-    z-index: 2;
-    margin-left: 75px;
-    display:inline-block;
-}
-
-.nvicon{
-    margin: 0 0 0 8px;
-    display:inline-flex;
-    position: relative;
-
-    }
 
 /*상단 스타일리스트, 채팅 메뉴*/
 .dc1{
     padding: 16px 16px 0 16px;
     margin: 0;
     border-bottom: 1px solid #C7C7C7;
+    display:block;
+    /* width: 100%; */
 }
     input {
     display: none;
@@ -60,7 +29,8 @@ body {
 .a1{
 display: inline-block;
 margin: 0px;
-width: 162px;
+/* width: 162px; */
+width: 49%;
 padding-bottom: 5px;
 font-weight: bold;
 text-align: center;
@@ -89,9 +59,28 @@ input:checked + label {
     display: block;}
 
 /*스타일리스트 목록*/
+.circle{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    overflow:hidden;
+    margin-bottom: 4px;
+}
+.img_circle{
+    width:100px;
+    height:100px;
+    object-fit:cover;
+}
+
 .dc2{
+    height: 172px;
+    width: 100%;
     margin: 0 auto;
     padding: 16px;
+    display:block;
+    /* overflow-x: scroll; */
+    /* white-space:nowrap */
+    /*해당 div에 사진을 더 넣기 위해 너비를 넓히면 body도 넓어짐.  */
 }
 .listTxet{
     font-size: 14px;
@@ -100,8 +89,9 @@ input:checked + label {
 }
 .newStylelist{
     margin: 0 auto;
-    padding: 16px 16px 0 0;
-    display: inline-block;
+    padding: 16px 8px 0 0;
+    display: inline;
+    float: left;
 }
 .listName{
     text-align: center;
@@ -113,12 +103,15 @@ input:checked + label {
 
 /*주간 스타일리스트 랭킹*/
 .dc3{
+    /*width: 100%;*/
     margin: 0 auto;
-    padding: 16px;
+    padding: 16px 16px 0 16px;
     border-top: 1px solid #C7C7C7;
+    display:block;
 }
 .sortMenu{
     margin: 0;
+    margin-bottom: 16px;
     padding: 0;
 }
 .item {
@@ -149,69 +142,165 @@ input:checked + label {
 /* 각 스타일리스트 */
 .dc4{
     margin: 0 auto;
-    padding-top: 16px;
+    padding:0 16px 0px 0px;
+    margin-left: 16px;
+    margin-top: 0px;
+    display:block;
+}
+
+.boxstylistPicture{
+    display: flex;
+    justify-content: center;
+}
+
+.box_margin{
+    margin-top: 16px;
+    display: block;
 }
 
 .stylist{
     font-size: 14px;
     color: #2E2E2E;
+    margin-top: 0px;
     margin-bottom: 16px;
 }
 
+.stylist2{
+    height: 20px;
+    font-size: 14px;
+    color: #2E2E2E;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
 .rank{
-    display: inline;
+    display: inline-block;
     margin-right: 10px;
 }
 .name{
-    display: inline;
-    margin-right: 185px;
+    display: inline-block;
+    /* margin-right: 185px; */
 }
 .tag{
-    display: inline;
+    display: inline-block;
 }
+
+
+
 .stylistPicture{
+    width:104px;
+    height:160px;
+    margin-right:8px;
+    overflow:hidden;
     display: inline;
+    float: left;
+}
+
+.stylistPicture2{
+    width:104px;
+    height:160px;
+    margin-right:0px;
+    overflow:hidden;
+    display: inline;
+    float: left;
+}
+
+.img_stylist{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
 .spacebox{
     display:block;
-    height:30vh;
+    height:50vh;
   }
 
-/*하단 메뉴*/
-.menu {
-    position: fixed;
-    background-color: #fff;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0;
-    width: 360px;
-    height: 50px;
-    border-top: 1px solid #C7C7C7;
+.listtext{
+    display: flex;
+    /* height: 50px; */
+    width: 100%;
+    /* border: 1px solid white;
+    background: #ffc83f; */
+}
+.listtext > .rn {
+    margin-right: auto;
+    flex: 1;
+    /* border: 1px solid white; */
+}
+.listtext > .tag > ul {
+    margin: 0px;
+    display: flex;
+    margin-left: auto;
+    flex: 2;
+    /* border: 1px solid white;		 */
+}
+.listtext > .tag > ul > li{
+    list-style: none;
+    margin-left: auto;
+    flex: 2;
+    /* border: 1px solid white;		 */
 }
 
-.menu ul{
-    list-style:none;
-    text-align:center;
-    padding:0px;
-    margin: 10px;
-  }
-  .menu ul li{
-    float:left;
-    width: 25%;
-    height:100%;
-    margin:0;
-    padding:0;
-    list-style: none;     
-    font-size: 11px;     
-    color: #000;            
-  }
-  .menu a:link, .menu a:visited{ 
-    text-decoration: none;
-    color:#000;
+/* nav */
+.nav1{
+    /* width: 100%; */
+    margin: 0 auto;
+    padding: 16px 16px 0 16px;
+    /*position:relative;
+    overflow-x: auto;*/
+    display: flex;
+    height: 30px;
+    /* margin-right: auto; */
+    }
+.nvtext1{
+    font-size: 20px;
+    color: #4b3e3e;
+    display: flex;
+    align-items: center;
+  justify-content: flex-end;
+  flex: 52%;
+}
+.nvtext1>p{
+    /* padding-left: 115px; */
+    /* margin-right: auto; */
+    margin: 0;
+    display: inline-block;
+    color: #6400ff;
+    font-weight: bold;
+}
+
+.btn_group1{
+    display: inline-block;
+    flex: 48%;
+margin-left: auto;
+align-items: center;
+}
+
+.btn_group1>ul{
+    /* display: flex; */
     
-  }
-  .menu a:hover{
-    opacity: 1;
-  }
+    margin: 0px;
+    padding: 0px;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    /* margin-left: auto; */
+    /* flex:2; */
+}
+.btn_group1>ul > li {
+    align-items: center;
+    margin: 0;
+    list-style: none;
+    /* margin-left: auto; */
+    /* flex: 2; */
+    /* border: 1px solid white; */
+}
+.nvicon1{
+    margin: 0 0 0 8px;
+    display:inline-flex;
+    position: relative;
+
+
+
+}

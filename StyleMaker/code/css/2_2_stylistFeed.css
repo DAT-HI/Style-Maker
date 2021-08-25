@@ -1,0 +1,166 @@
+/*상단바*/
+.nav1{
+    /* width: 100%; */
+    margin: 0 auto;
+    padding: 16px 16px 0 16px;
+    /*position:relative;
+    overflow-x: auto;*/
+    display: flex;
+    height: 30px;
+    /* margin-right: auto; */
+    }
+.profile{
+    font-size: 14px;
+    color: #4b3e3e;
+    display: flex;
+    align-items: center;
+}
+.profile > p{
+    margin-left: 8px;
+}
+
+.sm_circle{
+    width:34px;
+    height:34px;
+    border-radius: 50%;
+    overflow:hidden;
+}
+.img_circle{
+    width:34px;
+    height:34px;
+    object-fit:cover;
+}
+
+.btn_group1{
+    display: inline-block;
+    flex: 48%;
+margin-left: auto;
+align-items: center;
+}
+
+.btn_group1>ul{
+    
+    margin: 0px;
+    padding: 0px;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn_group1>ul > li {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nvicon1{
+    margin: 0 0 0 8px;
+    display:inline-flex;
+    position: relative;
+}
+
+
+.btn_group2{
+    margin-top:8px;
+    margin-left: auto;
+    align-items: center;
+}
+
+.btn_group2>ul{
+    
+    margin: 0px;
+    padding: 0px;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn_group2>ul > li {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nvicon1{
+    margin: 0 0 0 8px;
+    display:inline-flex;
+    position: relative;
+}
+
+/*스타일리스트 피드*/
+.feed{
+    margin: 0;
+    padding:0;
+    display:block;
+    margin-top:8px;
+}
+
+.pic{
+    width:100%;
+    height:30%;
+    overflow:hidden;
+    margin-bottom: 4px;
+    z-index: 9999;
+}
+.img_feed{
+    width:100%;
+    height:30%;
+    object-fit:cover;
+}
+
+.feed_text>p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.onefeed{
+    margin-bottom: 16px;
+}
+
+
+.spacebox{
+    display:block;
+    height:50vh;
+  }
+
+  /*상단 스타일리스트, 채팅 메뉴*/
+.dc1{
+    padding: 16px 16px 0 16px;
+    margin: 0;
+    border-bottom: 1px solid #C7C7C7;
+    display:block;
+    /* width: 100%; */
+}
+    input {
+    display: none;
+    }
+
+.a1{
+display: inline-block;
+margin: 0px;
+/* width: 162px; */
+width: 49%;
+padding-bottom: 5px;
+font-weight: bold;
+text-align: center;
+color: #707070;
+
+}
+label:hover {
+    color: #707070;
+    cursor: pointer;}
+
+label{
+    opacity: 0.87;
+}
+/*input 클릭시, label 스타일*/
+input:checked + label {
+    color: #707070;
+
+    border-bottom:2px solid #464646;
+    opacity: 1;
+}
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 
+{
+    display: block;}
