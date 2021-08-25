@@ -1,0 +1,90 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'NanumSquare', sans-serif;
+    color: #707070;
+}
+header {
+    padding: 16px 0;
+}
+
+/*상단 네이게이션 바*/
+.nav{
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px 16px 0 16px;
+    /*position:relative;
+    overflow-x: auto;*/
+    height: 30px;
+    }
+.nvtext{
+    font-size: 20px;
+    color: #4b3e3e;
+}
+
+.nvtext>p{
+    padding-left: 115px;
+    margin: 0;
+    display: inline-block;
+    color: #6400ff;
+    font-weight: bold;
+}
+
+.btn_group {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    margin-left: 40px;
+    display:inline-block;
+}
+
+.nvicon{
+    margin: 0 0 0 8px;
+    display:inline-flex;
+    position: relative;
+
+}
+
+/*하단 메뉴*/
+.menu {
+    position: fixed;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #C7C7C7;
+}
+
+.menu ul{
+    list-style:none;
+    text-align:center;
+    padding:0px;
+    margin: 10px;
+  }
+  .menu ul li{
+    float:left;
+    width: 25%;
+    height:100%;
+    margin:0;
+    padding:0;
+    list-style: none;     
+    font-size: 11px;     
+    color: #000;            
+  }
+  .menu a:link, .menu a:visited{ 
+    text-decoration: none;
+    color:#000;
+    
+  }
+  .menu a:hover{
+    opacity: 1;
+  }
