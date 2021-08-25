@@ -1,0 +1,38 @@
+
+main {
+    width: 100%;
+    outline: 1px dotted red;
+}
+.profile{
+    width: 100%;
+    height: 64px;
+    outline: 1px solid blue;
+}
+.profileImgShape{
+    width: 40px;
+    height: 40px;
+    border-radius: 70%;
+    overflow: hidden;
+}
+.profileImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    float: right;
+}
+/* .accountId {
+    float: right;
+} */
+.styleImgSpace {
+    position: relative;
+}
+.styleImgSpace:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+.styleImg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
